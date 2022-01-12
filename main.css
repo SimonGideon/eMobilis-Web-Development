@@ -1,10 +1,9 @@
-.headings{
-	background-color: aqua;
-	background-image: none;
-	padding: auto;
-	background-image: ;
+body{
+	font-family:  'Muli', sans-serif;
+	height: 5000px;
+
 }
-.bd{
-	background-image: url(3.JFIF);
-	background-repeat: none;	
+.navbar{
+	background: #2b2c2c;
+	padding: 25px;
 }
