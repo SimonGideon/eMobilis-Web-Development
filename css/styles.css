@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    font-family: 'Mork Sams', sans-serif;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: white;
+    font-size: 17px;
+}
+.navbar{
+    background-color: rgb(0, 0,0);
+    position:  fixed;
+    top: 0; left: 0; right: 0;
+    height: 90px;
+ 
+}
+}
+nav a{
+    float: right;
+}
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+}
+nav a{
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.logo{
+
+    width: 9%;
+}
