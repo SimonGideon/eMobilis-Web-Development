@@ -2,11 +2,11 @@ body{
     margin: 0;
     font-family: 'Mork Sams', sans-serif;
 }
-nav ul{
+nav ul a{
     margin: 0;
     padding: 0;
     list-style: none;
-    color: white;
+    color: white!important;
     font-size: 17px;
 }
 .navbar{
