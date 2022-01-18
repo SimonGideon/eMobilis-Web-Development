@@ -1,6 +1,11 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
 body{
     margin: 0;
+    padding-top: 100px; 
     font-family: 'Mork Sams', sans-serif;
+    height: 5000px;
+    background-color: black;
+    /* background: rgba(0.3, 0.4, 0.5); */
 }
 nav ul a{
     margin: 0;
@@ -10,10 +15,11 @@ nav ul a{
     font-size: 17px;
 }
 .navbar{
-    background-color: rgb(0, 0,0);
+    background-color: rgb(0, 0, 0.1);
     position:  fixed;
     top: 0; left: 0; right: 0;
     height: 90px;
+
  
 }
 }
@@ -33,3 +39,78 @@ nav a{
 
     width: 9%;
 }
+#slider{
+    background-image: url(/images/bg2.jpeg);
+    height: 500px;
+}
+.btn{
+    color: white;
+}
+..wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .typing-demo {
+    width: 30ch;
+    animation: typing 7s steps(22), blink .7s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 3em;
+    color: #f38e19 ;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  .profile_pic{
+        border-radius: 50%;
+        height: 50%;
+
+  }
+  .btn-1{
+    border: 2px solid #f38e19;
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+    margin-right: 70px;
+
+  }
+  .btn-1.btn-2{
+    transition-duration: 0.4s;
+  }
+  
+  .btn-1:hover {
+    color: white;
+  }
+  .btn-2:hover {
+    color: #f38e19;
+  }
+  .btn-2{
+    border: 2px solid white;
+    border-radius: 8px;
+    color: #f38e19;
+    font-size: 20px;
+
+  }
+  .about-me{
+    margin-top: 50px;
+    color: white;
+    font-family: Open Sans Light Italic;
+  }
+  .rm{
+    padding-right:0;
+    padding-left:0;
+  }
