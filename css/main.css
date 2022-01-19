@@ -353,7 +353,7 @@ html {
    [07]. Testimonials
 ========================== */
 .testimonials {
-    background: url('../img/bg/testimonials-bg.png') center center no-repeat;
+    background: url(/images/bg.jpg) center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     padding: 130px 0 170px 0;
