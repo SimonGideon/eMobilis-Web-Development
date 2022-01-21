@@ -1,0 +1,29 @@
+/* ====Body===== */
+body{
+    margin: 0;
+    font-family: 'work Sans', sans-serif;
+    font-weight: 300;
+}
+/* ====Begining of navbar==== */
+
+nav{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 20px 36px;
+    box-shadow: 0px 1px 5px rgba(0, 0,0.1);
+}
+nav li{
+    display: inline-block;
+    margin-left: 80px;
+    align-content: justified;
+  
+}
+nav a{
+    color: #ffa500;
+    font-family: Open Sans;
+    font-weight: bolder;
+    font-size: 20px;
+}
+ 
