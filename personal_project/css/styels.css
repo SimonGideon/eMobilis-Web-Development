@@ -1,29 +1,146 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* ====Body===== */
-body{
+body {
     margin: 0;
     font-family: 'work Sans', sans-serif;
     font-weight: 300;
+    width: 100%;
+    height: 500vh;
 }
+
 /* ====Begining of navbar==== */
 
-nav{
+nav {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 80px;
     padding: 20px 36px;
-    box-shadow: 0px 1px 5px rgba(0, 0,0.1);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0.1);
+    overflow: hidden;
+    background-color: white;
 }
-nav li{
+
+nav li {
     display: inline-block;
     margin-left: 80px;
     align-content: justified;
-  
+
 }
-nav a{
-    color: #ffa500;
+
+nav a {
+    color: #eb9902;
     font-family: Open Sans;
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 20px;
+    position: relative;
+    /* space between the line on hover and the letters */
+    padding-bottom: 0.25rem;
 }
- 
+
+/* Hovering effects */
+nav a::before {
+    content: "";
+    position: absolute;
+    /* left: 0; */
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #eb9902;
+    transition: width 0.25s ease-out;
+}
+
+nav a:hover {
+    color: black;
+    text-decoration: none;
+    width: 100%;
+}
+
+nav a:hover::before {
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+
+.bi-headset {
+    color: #ffa500;
+    align-content: right;
+}
+
+nav h1 {
+    font-size: 40px;
+}
+
+nav img {
+    margin-top: 0;
+}
+
+/* ====Banners */
+.banner2 {
+    position: absolute !important;
+    top: 81px;
+    right: 0px;
+}
+
+.banner1 {
+    position: absolute;
+    top: 81px;
+    left: 0px;
+}
+
+.banner-text p {
+    color: black;
+    align-content: center;
+    margin: 100px;
+    position: relative;
+    margin-left: 500px;
+    font-size: 2vw;
+
+
+}
+
+/* ==Meals slider== */
+.meals {
+    margin-top: 300px;
+    background: #ffa500;
+    position: relative;
+
+}
+
+.meals img {
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0.1);
+}
+
+/* ==Responsiveness== */
+/* when the screen less than 600 pixel wide, all links are hiden except home */
+/* @media screen and (max-width: 600px) {
+    .navbar:not(:first-child) {display: none;}
+    .navbar.icon{
+        float: right;
+        display: block;
+    }
+}
+@media screen and (max-width: 600px) {.navbar.responsive a.icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+} */
+/* .navbar.responsive{
+    float: none;
+    display: block;
+    text-align: left;
+}
+    
+} */
