@@ -26,13 +26,16 @@ html {
     scroll-padding-top: 3.5rem;
     scroll-behavior: smooth;
 }
+
 .navbar {
     background: #2b2c2c !important;
     padding: 25px 0;
 }
-.navbar-brand{
+
+.navbar-brand {
     max-width: 100%;
 }
+
 .navbar .nav-item {
     font-size: 14px;
     font-weight: 600;
@@ -46,9 +49,10 @@ html {
 .navbar .nav-item .nav-link:hover {
     color: #ffffff;
 }
+
 .navbar .navbar-nav .dropdown .dropdown-menu {
     margin-top: 25px;
-    background:#212222;
+    background: #212222;
 }
 
 .navbar .navbar-nav .dropdown span {
@@ -192,6 +196,7 @@ html {
     margin-bottom: 30px;
     background: #212222;
 }
+
 .services .box span {
     font-size: 30px;
     color: #e0a80d;
@@ -304,7 +309,7 @@ html {
     margin-bottom: 30px;
 }
 
-.portfolio .single-portfolio-item .overlay{
+.portfolio .single-portfolio-item .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -322,10 +327,10 @@ html {
     text-decoration: none;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: #ffffff;
     transition: all .3s ease-in-out;
-    
+
 }
 
 .portfolio .single-portfolio-item .overlay .content h3 {
@@ -416,13 +421,13 @@ html {
 }
 
 .testimonials .icon {
-  height: 40px;
-  width: 40px;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  font-size: 30px;
-  background-image: none;
-  color: #ffffff
+    height: 40px;
+    width: 40px;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    font-size: 30px;
+    background-image: none;
+    color: #ffffff
 }
 
 
@@ -529,6 +534,7 @@ html {
     background: #e0a80d;
     color: #ffffff;
 }
+
 .contact .info {
     padding-left: 40px;
 }
@@ -553,7 +559,7 @@ html {
     background: #242527;
 }
 
- .footer .social-icons span{
+.footer .social-icons span {
     color: #e0a80d;
     padding: 0 5px;
 }
@@ -572,6 +578,7 @@ html {
 ========================== */
 /*Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.99px) {
+
     /* Slider*/
     .slider {
         height: calc(100vh - 80px);
@@ -594,9 +601,11 @@ html {
     .about-me {
         padding: 130px 25px;
     }
+
     .about-me img {
         margin-bottom: 30px;
     }
+
     .about-me .btn-1 {
         margin-bottom: 30px;
     }
@@ -619,11 +628,11 @@ html {
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
 
-     /* Slider*/
-     .slider {
+    /* Slider*/
+    .slider {
         height: calc(100vh - 80px);
         margin-top: 80px;
-     }
+    }
 
     .slider .left-content {
         padding: 0;
@@ -684,5 +693,4 @@ html {
 
 
 /* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {
-}
+@media (max-width: 1199.98px) {}

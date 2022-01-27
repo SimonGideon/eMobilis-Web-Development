@@ -50,18 +50,19 @@
 
 
             </ul>
-            <h1 class="bi bi-headset"></h1>
         </div>
 
     </nav>
 
     <!-- ===Banner Section== -->
-    <section class="banner">
+    <section class="banner" id="Home">
         <div class="container overflow-hidden">
             <div class="banner1">
                 <img src="imgs/banner3.jpg" alt="banner1">
             </div>
-
+            <div class="banner-text">
+                <h1> Everything you need,delivered now.</h1>
+            </div>
             <div class="banner2">
                 <img src="imgs/banner2.jpg" alt="banner2">
             </div>
@@ -71,93 +72,211 @@
         </div>
     </section>
     <!--how it works  -->
-    <section>
+    <section class="how-it-works " id="About">
         <div class="container">
             <div class="text-center">
                 <h2>How it works</h2>
             </div>
             <div class="row">
                 <div class="col-sm text-center">
-                    <img src="/imgs/delivery.svg" alt="delivery">
+                    <img src="imgs/delivery.svg" alt="delivery">
                     <h3>Set delivery location</h3>
                     <p>Select the location where you want us to delivery</p>
                 </div>
                 <div class="col-sm text-center">
-                    <img src="/imgs/how-it-works-2.svg" alt="it_works">
+                    <img src="imgs/how-it-works-2.svg" alt="it_works">
                     <h3>Choose the product</h3>
                     <p>Browse shops that deliver near you</p>
                 </div>
                 <div class="col-sm text-center">
-                    <img src="/imgs/d.svg" alt="">
+                    <img src="imgs/d.svg" alt="">
                     <h3>Receive it at your doorstep</h3>
                     <p>Your order will be delivered to you in no time</p>
-
                 </div>
             </div>
 
         </div>
     </section>
-    <!-- ======our meals==== -->
-    <section class="meals" id="meals">
-        <div class="container text-center">
-            <div class="row">
-                <!-- Meal -->
-                <div class="co-md-6 col-lg-4">
-                    <div class="box">
-                        <div class="image card">
-                            <img src="imgs/event2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- meal-->
-                <div class="co-md-6 col-lg-4">
-                    <div class="box">
-                        <div class="image card">
-                            <img src="imgs/apx.webp" alt="">
-
-                        </div>
-                    </div>
-                </div>
-                <!-- meal-->
-                <div class="co-md-6 col-lg-4">
-                    <div class="box">
-                        <div class="image card">
-                            <img src="imgs/slider_2.jpg" alt="">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ===== meals ends here===== -->
-    <!-- ===About=== -->
-    <section class="about">
+    <!-- =====News letter -->
+    <section class="news-letter">
         <div class="container">
-            <div class="row">
-                <div class="col-md-5 rm">
-                    <img class="profile_pic" src="imgs/avartar.png" alt="Avartar" class="img-fluid">
-
-                </div>
-                <div class="col-md-5 rm">
-
-                    <p>
-                        Hello, this is Craizy Kennar. The managing director, instant Delicacies
-                        and also a contet maker in the entertainment inderstry in Kenya.
-
+            <div class="text-center">
+                <div class="subscribe-text">
+                    <h1><b>Subscribe your newsletters!</b></h1>
+                    <p>Don't miss out on our great offers & great Receive deals
+                        from all our top vendors via e-mail.
                     </p>
-                    <a href="https://www.youtube.com/c/TalesofthecrazyKennar" class="bi bi-youtube"></a>
-                    <a href="https://www.instagram.com/instant_delicacies/" class="bi bi-instagram"></a>
-                    <a href="https://www.facebook.com/Instant-Delicacies" class="bi bi-facebook"></a>
+                </div>
+                <div class="form-check">
+                    <form action="/#">
+                        <label class="drop-down" for="places" placeholder="select your city"></label>
+                        <select id="places" name="places">
+                            <option value="" disabled selected>Select your City</option>
+                            <option value="Nairobi">Nairobi</option>
+                            <option value="Thika">Thika</option>
+                            <option value="Eldoret">Eldoret</option>
+                            <option value="Nakuru">Nakuru</option>
+                            <option value="Kiambu">Kiambu</option>
+                            <option value="Kisumu City">Kisumu City</option>
+                            <option value="Mtwapa">Mtwapa</option>
+                            <option value="Mombasa">Mombasa</option>
+                            <option value="Machakos">Machakos</option>
+                        </select>
+                        <input class="form-mail" type="email" placeholder="E-mail" id="email" name="email">
+                        <input class="submit" type="submit" value="SUBSCRIBE NEWS LETTER!">
+                    </form>
+                </div>
+                <div class="">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        I have read and accepted the
+                        <a href="https://food.jumia.co.ke/contents/terms-and-conditions.htm"><u>Terms and conditions</u> </a>
+                        and the
+                        <a href="https://food.jumia.co.ke/contents/terms-and-conditions.htm"><u>policy</u></a>
+                    </label>
                 </div>
             </div>
         </div>
+        </div>
     </section>
-    <section class="events">
+    <!-- =====Food section==== -->
+    <section class="food">
         <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <img src="imgs/apx.webp" alt="">
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <img src="imgs/food_1.webp" alt="">
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <img src="imgs/food_2.webp" alt="">
+                </div>
+            </div>
 
         </div>
     </section>
+    <!-- ==Food ends here== -->
+
+    <!-- ====cooprate starts here==== -->
+    <section class="cooprate">
+        <div class="container">
+            <div class="text-center">
+                <h1>Instant Food Delicacies</h1>
+                <br>
+                <p>Order lunch, fuel for meetings or late-night deliveries
+                    to the office. Your favorite vendors coming to a desk near you.</p>
+            </div>
+        </div>
+    </section>
+    <!-- ==Food cooperate ends here -->
+
+    <!-- Order foood starts here -->
+    <section class="order">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Order food</h1>
+                    <p>The Jumia Food app makes it simple for
+                        anybody to use a mobile device to look over
+                        the menu of the best vendors and place an order for home delivery.
+                    </p>
+                </div>
+                <div class="col">
+
+                    <img class="oder-img" src="/imgs/jumia-food-app-mockup.png" alt="">
+                </div>
+            </div>
+
+
+    </section>
+    <!-- ==footer begins==-->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5>City</h5>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Food Delivery Nairobi</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/upperHill">Restaurant Upper Hill</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/cbd-town">Restaurant CBD</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/gigiri">Restaurant Gigiri</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Restaurant Riverside</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Food Delivery Mombasa</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Food Delivery Kajiado</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Food Delivery Eldoret</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Food Delivery Kiambu</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Food Delivery Kisumu</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Food Delivery Nakuru</a><br>
+                    <br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Supermarket online</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Alcoholic online</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Shopping online</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Pharmacy online</a><br>
+
+
+
+                </div>
+                <div class="col">
+                    <h5>Cuisines</h5>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Chinese Nairobi</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Piza in Nairobi</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Chicken in Nairobi</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Indian in Nairobi</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Burger Nairobi</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">African Food in Nairobi</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Sea food in Nairobi</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Barbecue in Nairobi</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Pasta in Nairobi</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Salad in Nairobi</a><br>
+
+
+                </div>
+                <div class="col">
+                    <h5>Popular vendors</h5>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Pizza Mojo</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Jumia Party Nairobi</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Six Square Supermarket</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Java House</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">KFC Delivery</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">ArtCaffe</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Mambo Italia</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Clay Oven</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Brew Bistro</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Big Square</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Absolute Juice</a><br>
+
+
+                </div>
+                <div class="col">
+                    <h5>Instant Foods</h5>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">About us</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Press</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">FAQ & Contacts</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Terms and conditions</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Privacy policy</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">How it works</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Become a rider</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Master class</a><br>
+                    <a href="https://food.jumia.co.ke/restaurants/city/nairobi">Sell on Jumia Food</a><br>
+                    <br>
+                    <h6>Contacts</h6>
+                    <div class="contacts-icons">
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-twitter"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-whatsapp"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div class="text-center Copyright">
+        <p> Copyright ©2021
+            <a href="#"></a>
+        </p>
+    </div>
 
     <!-- Smooth-Scroll -->
     <script src="js/smooth-scroll.js"></script>
