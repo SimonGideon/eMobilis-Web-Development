@@ -1,0 +1,35 @@
+/* navbar begins here */
+nav {
+    position: absolute;
+    background-color: aqua;
+}
+
+nav a {
+    color: black !important;
+}
+
+button {
+    position: relative;
+    color: #000000;
+}
+
+.table {
+    margin-top: 50px;
+
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: chocolate;
+}
+
+textarea {
+    height: 200px;
+}
+
+.contact-form {
+    margin-top: 100px;
+}

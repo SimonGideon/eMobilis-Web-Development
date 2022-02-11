@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootsrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- link css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Assignment</title>
+</head>
+<!-- Body starts here -->
+
+<body>
+    <!-- nav bar begins here -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-items" aria-controls="nav-items" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav-items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accounts</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">our Logs</a></li>
+                            <li><a class="dropdown-item" href="#">Inquiries</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- hero section begins here -->
+    <section class="hero">
+        <div id="carousel_id" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/imgs/1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/imgs/2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/imgs/3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel_id" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel_id" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section class="table">
+    <div class="container">
+        <h1>Table</h1>
+        <table class="center">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Middle Name</th>
+            </tr>
+            <tr>
+                <td>Alfonce</td>
+                <td>Mawingu</td>
+                <td>Sege</td>
+            </tr>
+            <tr>
+                <td>Lukas</td>
+                <td>Mwakingali</td>
+                <td>Asome</td>
+            </tr>
+            <tr>
+                <td>Daysline</td>
+                <td>Lucy</td>
+                <td>Charo</td>
+            </tr>
+        </table>
+    </div>
+
+    </section>
+    <!-- contact form -->
+    <section class="contact-form">
+        <div class="container">
+            <div class="col-md-8">
+                <form>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label for="name">Names</label>
+                            <input type="text" id="name" name="names" placeholder="Your Name">
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="emailaddress" placeholder="Email">
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label for="subject">subject</label>
+                                    <textarea name="subject" id="subject" cols="30" rows="10"></textarea>
+                                </div>
+                            </div>
+
+                            <button type="submit">Subscribe</button>
+                </form>
+            </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+
+    </script>
+</body>
+
+</html>

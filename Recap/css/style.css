@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#last {
+    margin: 80px;
+    border: solid 2px tomato;
+}
