@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: whitesmoke;
+    height: 800px;
+}
+
+/* =====Log in Screen begins here =====*/
+/* card section that holds the form stuffs */
+.login .card {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    align-content: center;
+    margin-top: 120px;
+    box-shadow: 0 4px 8px 0;
+    border-radius: 10px;
+}
+
+.login label {
+    color: whitesmoke !important;
+}
+
+/* content in the div class form-card-content */
+.form-card-content input {
+    border-radius: 10px;
+}
+
+.form-card-content h3 {
+    color: cadetblue;
+    margin-top: -10px !important;
+}
+
+.form-card-content {
+    margin: auto;
+    color: whitesmoke;
+}
+
+
+.form-card-content button {
+    border-radius: 10px;
+    width: 150px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: cadetblue;
+    border: none;
+    color: white;
+}
+
+input::placeholder {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.login input {
+    width: 250px;
+    height: 35px;
+    border-width: 2px;
+    border-color: rgba(2, 45, 238, 0.473);
+    text-align: center;
+    color: gray;
+}
+
+input:focus {
+    outline: none;
+}
+
+.login img {
+    width: 30%;
+    margin: auto;
+    margin-bottom: 0px;
+
+}
+
+/* =====Sign Up form begins here==== */
+.signup .card {
+    margin: auto;
+    width: 700px;
+    height: 550px;
+    align-content: center;
+    margin-top: 50px;
+    border-color: 3px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.form-content {
+    margin: auto;
+    margin-top: 30px;
+    color: grey;
+}
+
+.signup h3 {
+    margin-top: 20px !important;
+    color: cadetblue;
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.signup input {
+    text-align: center;
+    margin-bottom: 20px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: grey !important;
+    border-width: thin;
+
+}
+
+#email {
+    width: 550px;
+    margin-left: 35px;
+}
+
+#confirm {
+    width: 230px;
+}
+
+.signup button {
+    display: inlineblock;
+    border: none;
+    color: white;
+    background-color: cadetblue;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+.login-link {
+    text-align: right;
+    margin-left: 20px;
+}
+
+.signup img {
+    width: 20%;
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+button {
+    transition: 3s;
+}
