@@ -1,58 +1,72 @@
 <?php
 include 'config.php';
+// starting a session 
 session_start();
-error_reporting(0);
-if(isset($_SESSION['username'])){
-    header("Location: welcome.php");
-}
-if (isset($_POST['submit'])){
-    $email =$_POST['email'];
-    $password =md5($_POST['password']);
-    $sql = "SELECT * FROM users WHERE email=$email AND password='$password'";
-    $result = mysqli_query($conn, $sql);
-    if ($result->num_rows >0){
-        $row = mysqli_fetch_assoc($result);
-        $_SESSION['username'] = $row['username'];
-        header("Location: welcome.php");
-    }else{
-        echo "<script>alert('woops! Email address or password is wrong.')</script>";
-    }
+error_reporting(0);//start error reporting
 
+//check if session is existing.
+if(isset($_session["username"])){
+
+    header('location:welcome.php');
+}
+
+// check the info isset haha.. by using the superglobal post
+if(isset($_POST['submit'])){
+    $email =$_POST['email'];
+    $password =md5($_POST['password']);//md5 encrypts the password
+    //select from users to pick data
+    $sql ="select * from users where email ='$email' and password ='$password'";//check the email in db and compare if the user exists in db.
+    $result =mysqli_query($conn,$sql);//query and store result in result
+    if($result->num_rows > 0){
+        $row  =mysqli_fetch_assoc($result);//fetch the entire row of the result if any.
+        $_SESSION["username"] =$row["username"];//assign the row result to the session
+        header("location: welcome.php");
+    }
+    else{
+        echo "<script> alert('OOps Email or Password is wrong')</script>";
+
+    }
 }
 ?>
-<!-- html starts here -->
+<!-- the form used -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootsrap -->
+    <title>My form</title>
+
+    <!-- bootstrap links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- css  -->
-    <link rel="stylesheet" href="css/main.css">
-    <title>Login Form - Student Shelve</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="login">
-        <div class="card">
-            <img class="center-block" src="img/logo.png" alt="">
-            <div class="form-card-content">
-                <h3 class="text-center">Log In</h3>
-                <div class="text-center">
-                    <form action="POST">
-                        <label for="email"></label><br>
-                        <input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required><br>
-                        <label for="password"></label><br>
-                        <input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required><br>
-                        <br><button type="submit">Login</button><br>
-                        <p class="text-grey">Do you have an acount ? <a href="register.php">Register</a></p>
-                    </form>
-                </div>
+    <head>
+    <div class ="container">
+        <form action="" method="POST" class="login-email">
+        <p class="login-text" style="font-size: 2rem; font: weight 800;">login</p>
+        <div class="input-group">
+            <input type="email" placeholder="Email" name="email"  value="<?php echo $email;?> " required>
 
-            </div>
         </div>
-    </div>
+        <div class="input-group">
+            <input type="password" placeholder="password" name="password"  value="<?php echo $password;?> " required>
+
+        </div>
+        <div class="input-group">
+           <button name="submit" class="btn">Login</button>
+        </div>
+        <p class="login-register-text">Dont have an account?<a href="register.php">Register here</a></p>
+        <p><a href="reset.php">Reset Password</a></p>
     
+    </form>
+    </div>
+    </head>
 </body>
 </html>
